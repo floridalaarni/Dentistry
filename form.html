@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="image/—Pngtree—orange natural logo_591422.png" type="image/x-icon">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <title> SmileCraft </title>
+</head>
+<body>
+    
+        <div class="container">
+            <div class="logo">
+                <h3><a href="join.html" class="logoo"></a> SmileCraft</h1> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="welcome.html">HOME</a></li>
+                    <li><a href="welcome.html">SERVICE'S</a></li>
+                    <li><a href="welcome.html">DOCTOR</a></li>
+                    <li><a href="welcome.html">ABOUT</a></li>
+                    <li><a href="welcome.html">CONTACT US</a></li>
+                    <li><a href="form.html">Book Appointment </a></li>
+                </ul>
+            </nav>
+        </div>
+     
+<br> 
+<br>
+<br>
+<br> 
+<br>
+<br>
+    <div class="containerr">
+       <center> <img src="Life_care__1_-removebg-preview.png" alt="Logo" class="logo"></center>
+        <h2>Form Appointment </h2>
+        <hr>
+        <form id="patientForm" action="#" method="POST">
+
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+                 <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br>
+
+            
+            <label for="height">Height (in cm):</label><br>
+            <input type="number" id="height" name="height" required><br>
+
+            <label for="weight">Weight (in kg):</label><br>
+            <input type="number" id="weight" name="weight" required><br>
+
+            <label for="contact">Contact Number:</label><br>
+            <input type="tel" id="contact" name="contact" required><br>
+<br>
+<br>
+            <label class="medical-history-checkbox">
+                <input type="checkbox" id="allergies" name="medical_history[]" value="Allergies">
+                Preventive 
+            </label>
+            
+            <label class="medical-history-checkbox">
+                <input type="checkbox" id="surgeries" name="medical_history[]" value="Previous Surgeries">
+                Restorative
+            </label>
+            
+            <label class="medical-history-checkbox">
+                <input type="checkbox" id="family_history" name="medical_history[]" value="Family Medical History">
+                Cosmetic
+            </label>
+            
+            <label class="medical-history-checkbox">
+                <input type="checkbox" id="chronic_illnesses" name="medical_history[]" value="Chronic Illnesses">
+                Periodontal (Gum) 
+            </label>
+            
+            <label class="medical-history-checkbox">
+                <input type="checkbox" id="medications" name="medical_history[]" value="Medications Currently Taking">
+                Endodontic Treatments
+            </label>
+
+            <label class="medical-history-checkbox">
+                <input type="checkbox" id="medications" name="medical_history[]" value="Medications Currently Taking">
+                Oral Surgery
+            </label>
+            
+            <label class="medical-history-checkbox">
+                <input type="checkbox" id="medications" name="medical_history[]" value="Medications Currently Taking">
+                Pediatric 
+            </label>
+
+            <label class="medical-history-checkbox">
+                <input type="checkbox" id="medications" name="medical_history[]" value="Medications Currently Taking">
+                Orthodontics
+            </label>
+
+
+            <label class="medical-history-checkbox">
+                <input type="checkbox" id="other_conditions" name="medical_history[]" value="Other Medical Conditions">
+                Other Medical Conditions
+            </label>
+<br>
+<br>
+            <label for="reason_visit">Reason to Visit:</label><br>
+            <textarea id="reason_visit" name="reason_visit" rows="4" cols="50" required></textarea><br>
+
+            <input type="submit" value="Submit" id="reviewBtn">
+
+        </form>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Review Patient Information</h2>
+            <div class="patient-info-box" id="patientInfoBox"></div>
+            <button id="confirmBtn">Confirm</button>
+        </div>
+    </div>
+
+      <script src="appointment.js"></script>
+      
+      <script>
+        document.getElementById('patientForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    
+
+
+</body>
+</html
